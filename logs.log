@@ -3821,3 +3821,51 @@ In 0.22.0, predict_quantiles return default column level 0 name will change for 
 
 2023-10-14 18:01:20,514:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
 2023-10-14 18:01:20,650:INFO:Visual Rendered Successfully
+2023-10-14 18:03:36,464:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning:
+
+In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+
+
+2023-10-14 18:04:38,531:INFO:Initializing finalize_model()
+2023-10-14 18:04:38,531:INFO:finalize_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=NaiveForecaster(strategy='mean'), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2023-10-14 18:04:38,531:INFO:Finalizing NaiveForecaster(strategy='mean')
+2023-10-14 18:04:38,534:INFO:Initializing create_model()
+2023-10-14 18:04:38,534:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=NaiveForecaster(strategy='mean'), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, kwargs={})
+2023-10-14 18:04:38,534:INFO:Checking exceptions
+2023-10-14 18:04:38,538:INFO:Importing libraries
+2023-10-14 18:04:38,538:INFO:Copying training dataset
+2023-10-14 18:04:38,543:INFO:Defining folds
+2023-10-14 18:04:38,543:INFO:Declaring metric variables
+2023-10-14 18:04:38,543:INFO:Importing untrained model
+2023-10-14 18:04:38,543:INFO:Declaring custom model
+2023-10-14 18:04:38,543:INFO:Grand Means Forecaster Imported successfully
+2023-10-14 18:04:38,543:INFO:Cross validation set to False
+2023-10-14 18:04:38,543:INFO:Fitting Model
+2023-10-14 18:04:38,555:INFO:ForecastingPipeline(steps=[('forecaster',
+                            TransformedTargetForecaster(steps=[('model',
+                                                                NaiveForecaster(strategy='mean'))]))])
+2023-10-14 18:04:38,555:INFO:create_model() successfully completed......................................
+2023-10-14 18:04:38,685:INFO:_master_model_container: 27
+2023-10-14 18:04:38,685:INFO:_display_container: 6
+2023-10-14 18:04:38,685:INFO:ForecastingPipeline(steps=[('forecaster',
+                            TransformedTargetForecaster(steps=[('model',
+                                                                NaiveForecaster(strategy='mean'))]))])
+2023-10-14 18:04:38,685:INFO:finalize_model() successfully completed......................................
+2023-10-14 18:05:00,293:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning:
+
+In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+
+
+2023-10-14 18:05:00,313:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
+2023-10-14 18:05:12,617:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning:
+
+In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+
+
+2023-10-14 18:05:12,634:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
+2023-10-14 18:05:49,402:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning:
+
+In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+
+
+2023-10-14 18:05:49,613:INFO:Visual Rendered Successfully
