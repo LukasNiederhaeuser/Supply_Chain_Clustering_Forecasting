@@ -2215,3 +2215,1609 @@ FigureCanvasAgg is non-interactive, and thus cannot be shown
 
 
 2023-10-14 17:33:20,245:INFO:Visual Rendered Successfully
+2023-10-14 17:46:52,545:INFO:Initializing compare_models()
+2023-10-14 17:46:52,545:INFO:compare_models(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, include=None, fold=None, round=4, cross_validation=True, sort=MASE, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'MASE', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.time_series.forecasting.oop.TSForecastingExperiment'>}, exclude=None)
+2023-10-14 17:46:52,545:INFO:Checking exceptions
+2023-10-14 17:46:52,551:INFO:Preparing display monitor
+2023-10-14 17:46:52,578:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:713: UserWarning:
+
+Unsupported estimator `ensemble_forecaster` for method `compare_models()`, removing from model_library
+
+
+2023-10-14 17:46:52,578:INFO:Initializing Naive Forecaster
+2023-10-14 17:46:52,578:INFO:Total runtime is 0.0 minutes
+2023-10-14 17:46:52,586:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:46:52,586:INFO:Initializing create_model()
+2023-10-14 17:46:52,587:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=naive, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:46:52,587:INFO:Checking exceptions
+2023-10-14 17:46:52,587:INFO:Importing libraries
+2023-10-14 17:46:52,587:INFO:Copying training dataset
+2023-10-14 17:46:52,591:INFO:Defining folds
+2023-10-14 17:46:52,593:INFO:Declaring metric variables
+2023-10-14 17:46:52,599:INFO:Importing untrained model
+2023-10-14 17:46:52,602:INFO:Naive Forecaster Imported successfully
+2023-10-14 17:46:52,616:INFO:Starting cross validation
+2023-10-14 17:46:52,620:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:46:56,283:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:46:56,315:INFO:Calculating mean and std
+2023-10-14 17:46:56,315:INFO:Creating metrics dataframe
+2023-10-14 17:46:56,323:INFO:Uploading results into container
+2023-10-14 17:46:56,323:INFO:Uploading model into container now
+2023-10-14 17:46:56,323:INFO:_master_model_container: 1
+2023-10-14 17:46:56,323:INFO:_display_container: 2
+2023-10-14 17:46:56,323:INFO:NaiveForecaster()
+2023-10-14 17:46:56,323:INFO:create_model() successfully completed......................................
+2023-10-14 17:46:56,442:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:46:56,442:INFO:Creating metrics dataframe
+2023-10-14 17:46:56,452:INFO:Initializing Grand Means Forecaster
+2023-10-14 17:46:56,453:INFO:Total runtime is 0.0645821491877238 minutes
+2023-10-14 17:46:56,456:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:46:56,456:INFO:Initializing create_model()
+2023-10-14 17:46:56,456:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=grand_means, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:46:56,457:INFO:Checking exceptions
+2023-10-14 17:46:56,457:INFO:Importing libraries
+2023-10-14 17:46:56,457:INFO:Copying training dataset
+2023-10-14 17:46:56,462:INFO:Defining folds
+2023-10-14 17:46:56,465:INFO:Declaring metric variables
+2023-10-14 17:46:56,467:INFO:Importing untrained model
+2023-10-14 17:46:56,472:INFO:Grand Means Forecaster Imported successfully
+2023-10-14 17:46:56,481:INFO:Starting cross validation
+2023-10-14 17:46:56,485:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:46:58,377:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:46:58,402:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:46:58,404:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:46:58,431:INFO:Calculating mean and std
+2023-10-14 17:46:58,433:INFO:Creating metrics dataframe
+2023-10-14 17:46:58,438:INFO:Uploading results into container
+2023-10-14 17:46:58,438:INFO:Uploading model into container now
+2023-10-14 17:46:58,441:INFO:_master_model_container: 2
+2023-10-14 17:46:58,441:INFO:_display_container: 2
+2023-10-14 17:46:58,441:INFO:NaiveForecaster(strategy='mean')
+2023-10-14 17:46:58,441:INFO:create_model() successfully completed......................................
+2023-10-14 17:46:58,546:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:46:58,546:INFO:Creating metrics dataframe
+2023-10-14 17:46:58,554:INFO:Initializing Seasonal Naive Forecaster
+2023-10-14 17:46:58,554:INFO:Total runtime is 0.09960133632024129 minutes
+2023-10-14 17:46:58,561:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:46:58,562:INFO:Initializing create_model()
+2023-10-14 17:46:58,562:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=snaive, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:46:58,562:INFO:Checking exceptions
+2023-10-14 17:46:58,562:INFO:Importing libraries
+2023-10-14 17:46:58,562:INFO:Copying training dataset
+2023-10-14 17:46:58,563:INFO:Defining folds
+2023-10-14 17:46:58,563:INFO:Declaring metric variables
+2023-10-14 17:46:58,567:INFO:Importing untrained model
+2023-10-14 17:46:58,575:INFO:Seasonal Naive Forecaster Imported successfully
+2023-10-14 17:46:58,591:INFO:Starting cross validation
+2023-10-14 17:46:58,595:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:46:58,694:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:47:00,576:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:47:00,580:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:47:00,624:INFO:Calculating mean and std
+2023-10-14 17:47:00,624:INFO:Creating metrics dataframe
+2023-10-14 17:47:00,664:INFO:Uploading results into container
+2023-10-14 17:47:00,664:INFO:Uploading model into container now
+2023-10-14 17:47:00,664:INFO:_master_model_container: 3
+2023-10-14 17:47:00,664:INFO:_display_container: 2
+2023-10-14 17:47:00,664:INFO:NaiveForecaster(sp=16)
+2023-10-14 17:47:00,664:INFO:create_model() successfully completed......................................
+2023-10-14 17:47:00,766:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:47:00,766:INFO:Creating metrics dataframe
+2023-10-14 17:47:00,778:INFO:Initializing Polynomial Trend Forecaster
+2023-10-14 17:47:00,778:INFO:Total runtime is 0.1366679310798645 minutes
+2023-10-14 17:47:00,784:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:47:00,784:INFO:Initializing create_model()
+2023-10-14 17:47:00,784:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=polytrend, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:47:00,784:INFO:Checking exceptions
+2023-10-14 17:47:00,784:INFO:Importing libraries
+2023-10-14 17:47:00,787:INFO:Copying training dataset
+2023-10-14 17:47:00,791:INFO:Defining folds
+2023-10-14 17:47:00,791:INFO:Declaring metric variables
+2023-10-14 17:47:00,795:INFO:Importing untrained model
+2023-10-14 17:47:00,799:INFO:Polynomial Trend Forecaster Imported successfully
+2023-10-14 17:47:00,826:INFO:Starting cross validation
+2023-10-14 17:47:00,830:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:47:00,887:INFO:Calculating mean and std
+2023-10-14 17:47:00,887:INFO:Creating metrics dataframe
+2023-10-14 17:47:00,892:INFO:Uploading results into container
+2023-10-14 17:47:00,892:INFO:Uploading model into container now
+2023-10-14 17:47:00,892:INFO:_master_model_container: 4
+2023-10-14 17:47:00,892:INFO:_display_container: 2
+2023-10-14 17:47:00,892:INFO:PolynomialTrendForecaster()
+2023-10-14 17:47:00,892:INFO:create_model() successfully completed......................................
+2023-10-14 17:47:00,980:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:47:00,980:INFO:Creating metrics dataframe
+2023-10-14 17:47:00,988:INFO:Initializing ARIMA
+2023-10-14 17:47:00,988:INFO:Total runtime is 0.14017192522684732 minutes
+2023-10-14 17:47:00,997:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:47:00,997:INFO:Initializing create_model()
+2023-10-14 17:47:00,997:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:47:00,997:INFO:Checking exceptions
+2023-10-14 17:47:00,997:INFO:Importing libraries
+2023-10-14 17:47:00,997:INFO:Copying training dataset
+2023-10-14 17:47:01,001:INFO:Defining folds
+2023-10-14 17:47:01,001:INFO:Declaring metric variables
+2023-10-14 17:47:01,005:INFO:Importing untrained model
+2023-10-14 17:47:01,011:INFO:ARIMA Imported successfully
+2023-10-14 17:47:01,022:INFO:Starting cross validation
+2023-10-14 17:47:01,026:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:47:01,298:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:47:01,298:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:47:01,307:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:47:01,361:INFO:Calculating mean and std
+2023-10-14 17:47:01,361:INFO:Creating metrics dataframe
+2023-10-14 17:47:01,365:INFO:Uploading results into container
+2023-10-14 17:47:01,365:INFO:Uploading model into container now
+2023-10-14 17:47:01,365:INFO:_master_model_container: 5
+2023-10-14 17:47:01,365:INFO:_display_container: 2
+2023-10-14 17:47:01,365:INFO:ARIMA(seasonal_order=(0, 1, 0, 16))
+2023-10-14 17:47:01,365:INFO:create_model() successfully completed......................................
+2023-10-14 17:47:01,466:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:47:01,466:INFO:Creating metrics dataframe
+2023-10-14 17:47:01,476:INFO:Initializing Auto ARIMA
+2023-10-14 17:47:01,476:INFO:Total runtime is 0.14830011129379272 minutes
+2023-10-14 17:47:01,479:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:47:01,479:INFO:Initializing create_model()
+2023-10-14 17:47:01,479:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=auto_arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:47:01,479:INFO:Checking exceptions
+2023-10-14 17:47:01,479:INFO:Importing libraries
+2023-10-14 17:47:01,479:INFO:Copying training dataset
+2023-10-14 17:47:01,483:INFO:Defining folds
+2023-10-14 17:47:01,483:INFO:Declaring metric variables
+2023-10-14 17:47:01,487:INFO:Importing untrained model
+2023-10-14 17:47:01,487:INFO:Auto ARIMA Imported successfully
+2023-10-14 17:47:01,503:INFO:Starting cross validation
+2023-10-14 17:47:01,503:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:47:13,083:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:48:31,415:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:49:18,365:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\pmdarima\arima\_auto_solvers.py:524: ModelFitWarning: Error fitting  ARIMA(2,0,2)(1,0,1)[16]           (if you do not want to see these warnings, run with error_action="ignore").
+  warnings.warn(warning_str, ModelFitWarning)
+
+2023-10-14 17:49:18,638:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:49:18,789:INFO:Calculating mean and std
+2023-10-14 17:49:18,789:INFO:Creating metrics dataframe
+2023-10-14 17:49:18,809:INFO:Uploading results into container
+2023-10-14 17:49:18,809:INFO:Uploading model into container now
+2023-10-14 17:49:18,809:INFO:_master_model_container: 6
+2023-10-14 17:49:18,809:INFO:_display_container: 2
+2023-10-14 17:49:18,813:INFO:AutoARIMA(random_state=123, sp=16, suppress_warnings=True)
+2023-10-14 17:49:18,813:INFO:create_model() successfully completed......................................
+2023-10-14 17:49:19,008:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:49:19,008:INFO:Creating metrics dataframe
+2023-10-14 17:49:19,043:INFO:Initializing Exponential Smoothing
+2023-10-14 17:49:19,043:INFO:Total runtime is 2.44108868042628 minutes
+2023-10-14 17:49:19,053:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:49:19,053:INFO:Initializing create_model()
+2023-10-14 17:49:19,053:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=exp_smooth, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:49:19,053:INFO:Checking exceptions
+2023-10-14 17:49:19,053:INFO:Importing libraries
+2023-10-14 17:49:19,053:INFO:Copying training dataset
+2023-10-14 17:49:19,070:INFO:Defining folds
+2023-10-14 17:49:19,070:INFO:Declaring metric variables
+2023-10-14 17:49:19,083:INFO:Importing untrained model
+2023-10-14 17:49:19,094:INFO:Exponential Smoothing Imported successfully
+2023-10-14 17:49:19,124:INFO:Starting cross validation
+2023-10-14 17:49:19,128:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:49:19,946:INFO:Calculating mean and std
+2023-10-14 17:49:19,946:INFO:Creating metrics dataframe
+2023-10-14 17:49:19,966:INFO:Uploading results into container
+2023-10-14 17:49:19,966:INFO:Uploading model into container now
+2023-10-14 17:49:19,966:INFO:_master_model_container: 7
+2023-10-14 17:49:19,970:INFO:_display_container: 2
+2023-10-14 17:49:19,970:INFO:ExponentialSmoothing(seasonal='mul', sp=16, trend='add')
+2023-10-14 17:49:19,973:INFO:create_model() successfully completed......................................
+2023-10-14 17:49:20,149:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:49:20,153:INFO:Creating metrics dataframe
+2023-10-14 17:49:20,183:INFO:Initializing ETS
+2023-10-14 17:49:20,185:INFO:Total runtime is 2.4601189970970156 minutes
+2023-10-14 17:49:20,195:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:49:20,195:INFO:Initializing create_model()
+2023-10-14 17:49:20,195:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=ets, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:49:20,195:INFO:Checking exceptions
+2023-10-14 17:49:20,195:INFO:Importing libraries
+2023-10-14 17:49:20,197:INFO:Copying training dataset
+2023-10-14 17:49:20,213:INFO:Defining folds
+2023-10-14 17:49:20,214:INFO:Declaring metric variables
+2023-10-14 17:49:20,223:INFO:Importing untrained model
+2023-10-14 17:49:20,233:INFO:ETS Imported successfully
+2023-10-14 17:49:20,259:INFO:Starting cross validation
+2023-10-14 17:49:20,263:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:49:21,814:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:49:21,979:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:49:22,883:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:49:23,086:INFO:Calculating mean and std
+2023-10-14 17:49:23,086:INFO:Creating metrics dataframe
+2023-10-14 17:49:23,105:INFO:Uploading results into container
+2023-10-14 17:49:23,106:INFO:Uploading model into container now
+2023-10-14 17:49:23,107:INFO:_master_model_container: 8
+2023-10-14 17:49:23,107:INFO:_display_container: 2
+2023-10-14 17:49:23,107:INFO:AutoETS(seasonal='mul', sp=16, trend='add')
+2023-10-14 17:49:23,107:INFO:create_model() successfully completed......................................
+2023-10-14 17:49:23,273:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:49:23,275:INFO:Creating metrics dataframe
+2023-10-14 17:49:23,312:INFO:Initializing Theta Forecaster
+2023-10-14 17:49:23,313:INFO:Total runtime is 2.512251683076223 minutes
+2023-10-14 17:49:23,323:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:49:23,323:INFO:Initializing create_model()
+2023-10-14 17:49:23,323:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=theta, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:49:23,327:INFO:Checking exceptions
+2023-10-14 17:49:23,327:INFO:Importing libraries
+2023-10-14 17:49:23,327:INFO:Copying training dataset
+2023-10-14 17:49:23,339:INFO:Defining folds
+2023-10-14 17:49:23,339:INFO:Declaring metric variables
+2023-10-14 17:49:23,355:INFO:Importing untrained model
+2023-10-14 17:49:23,366:INFO:Theta Forecaster Imported successfully
+2023-10-14 17:49:23,399:INFO:Starting cross validation
+2023-10-14 17:49:23,406:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:49:23,539:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:49:23,545:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:49:23,597:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:49:23,653:INFO:Calculating mean and std
+2023-10-14 17:49:23,657:INFO:Creating metrics dataframe
+2023-10-14 17:49:23,670:INFO:Uploading results into container
+2023-10-14 17:49:23,670:INFO:Uploading model into container now
+2023-10-14 17:49:23,672:INFO:_master_model_container: 9
+2023-10-14 17:49:23,672:INFO:_display_container: 2
+2023-10-14 17:49:23,673:INFO:ThetaForecaster(sp=16)
+2023-10-14 17:49:23,673:INFO:create_model() successfully completed......................................
+2023-10-14 17:49:23,851:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:49:23,851:INFO:Creating metrics dataframe
+2023-10-14 17:49:23,895:INFO:Initializing STLF
+2023-10-14 17:49:23,896:INFO:Total runtime is 2.521963218847911 minutes
+2023-10-14 17:49:23,906:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:49:23,906:INFO:Initializing create_model()
+2023-10-14 17:49:23,906:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=stlf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:49:23,906:INFO:Checking exceptions
+2023-10-14 17:49:23,909:INFO:Importing libraries
+2023-10-14 17:49:23,910:INFO:Copying training dataset
+2023-10-14 17:49:23,918:INFO:Defining folds
+2023-10-14 17:49:23,918:INFO:Declaring metric variables
+2023-10-14 17:49:23,932:INFO:Importing untrained model
+2023-10-14 17:49:23,944:INFO:STLF Imported successfully
+2023-10-14 17:49:23,971:INFO:Starting cross validation
+2023-10-14 17:49:23,975:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:49:24,285:INFO:Calculating mean and std
+2023-10-14 17:49:24,285:INFO:Creating metrics dataframe
+2023-10-14 17:49:24,301:INFO:Uploading results into container
+2023-10-14 17:49:24,302:INFO:Uploading model into container now
+2023-10-14 17:49:24,304:INFO:_master_model_container: 10
+2023-10-14 17:49:24,304:INFO:_display_container: 2
+2023-10-14 17:49:24,305:INFO:STLForecaster(sp=16)
+2023-10-14 17:49:24,305:INFO:create_model() successfully completed......................................
+2023-10-14 17:49:24,473:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:49:24,473:INFO:Creating metrics dataframe
+2023-10-14 17:49:24,505:INFO:Initializing Croston
+2023-10-14 17:49:24,505:INFO:Total runtime is 2.5321094155311585 minutes
+2023-10-14 17:49:24,513:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:49:24,516:INFO:Initializing create_model()
+2023-10-14 17:49:24,516:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=croston, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:49:24,516:INFO:Checking exceptions
+2023-10-14 17:49:24,516:INFO:Importing libraries
+2023-10-14 17:49:24,516:INFO:Copying training dataset
+2023-10-14 17:49:24,529:INFO:Defining folds
+2023-10-14 17:49:24,529:INFO:Declaring metric variables
+2023-10-14 17:49:24,536:INFO:Importing untrained model
+2023-10-14 17:49:24,550:INFO:Croston Imported successfully
+2023-10-14 17:49:24,577:INFO:Starting cross validation
+2023-10-14 17:49:24,586:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:49:24,707:INFO:Calculating mean and std
+2023-10-14 17:49:24,711:INFO:Creating metrics dataframe
+2023-10-14 17:49:24,726:INFO:Uploading results into container
+2023-10-14 17:49:24,726:INFO:Uploading model into container now
+2023-10-14 17:49:24,730:INFO:_master_model_container: 11
+2023-10-14 17:49:24,730:INFO:_display_container: 2
+2023-10-14 17:49:24,733:INFO:Croston()
+2023-10-14 17:49:24,733:INFO:create_model() successfully completed......................................
+2023-10-14 17:49:24,913:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:49:24,913:INFO:Creating metrics dataframe
+2023-10-14 17:49:24,956:INFO:Initializing Linear w/ Cond. Deseasonalize & Detrending
+2023-10-14 17:49:24,956:INFO:Total runtime is 2.5396265665690105 minutes
+2023-10-14 17:49:24,968:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:49:24,968:INFO:Initializing create_model()
+2023-10-14 17:49:24,968:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=lr_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:49:24,968:INFO:Checking exceptions
+2023-10-14 17:49:24,968:INFO:Importing libraries
+2023-10-14 17:49:24,971:INFO:Copying training dataset
+2023-10-14 17:49:24,984:INFO:Defining folds
+2023-10-14 17:49:24,984:INFO:Declaring metric variables
+2023-10-14 17:49:24,995:INFO:Importing untrained model
+2023-10-14 17:49:25,010:INFO:Linear w/ Cond. Deseasonalize & Detrending Imported successfully
+2023-10-14 17:49:25,038:INFO:Starting cross validation
+2023-10-14 17:49:25,043:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:49:25,773:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-10-14 17:49:25,773:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-10-14 17:49:25,773:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-10-14 17:49:30,837:INFO:Calculating mean and std
+2023-10-14 17:49:30,841:INFO:Creating metrics dataframe
+2023-10-14 17:49:30,856:INFO:Uploading results into container
+2023-10-14 17:49:30,856:INFO:Uploading model into container now
+2023-10-14 17:49:30,856:INFO:_master_model_container: 12
+2023-10-14 17:49:30,860:INFO:_display_container: 2
+2023-10-14 17:49:30,872:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [16, 15,
+                                                                        14, 13,
+                                                                        12, 11,
+                                                                        10, 9,
+                                                                        8, 7, 6,
+                                                                        5, 4, 3,
+                                                                        2, 1]},
+                                                   n_jobs=1)],
+                    regressor=LinearRegression(n_jobs=-1), sp=16,
+                    window_length=16)
+2023-10-14 17:49:30,872:INFO:create_model() successfully completed......................................
+2023-10-14 17:49:31,046:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:49:31,046:INFO:Creating metrics dataframe
+2023-10-14 17:49:31,091:INFO:Initializing Elastic Net w/ Cond. Deseasonalize & Detrending
+2023-10-14 17:49:31,091:INFO:Total runtime is 2.6418883641560873 minutes
+2023-10-14 17:49:31,103:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:49:31,104:INFO:Initializing create_model()
+2023-10-14 17:49:31,104:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=en_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:49:31,104:INFO:Checking exceptions
+2023-10-14 17:49:31,104:INFO:Importing libraries
+2023-10-14 17:49:31,104:INFO:Copying training dataset
+2023-10-14 17:49:31,129:INFO:Defining folds
+2023-10-14 17:49:31,129:INFO:Declaring metric variables
+2023-10-14 17:49:31,142:INFO:Importing untrained model
+2023-10-14 17:49:31,155:INFO:Elastic Net w/ Cond. Deseasonalize & Detrending Imported successfully
+2023-10-14 17:49:31,187:INFO:Starting cross validation
+2023-10-14 17:49:31,193:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:49:31,758:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-10-14 17:49:31,763:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-10-14 17:49:31,799:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-10-14 17:49:37,021:INFO:Calculating mean and std
+2023-10-14 17:49:37,026:INFO:Creating metrics dataframe
+2023-10-14 17:49:37,038:INFO:Uploading results into container
+2023-10-14 17:49:37,038:INFO:Uploading model into container now
+2023-10-14 17:49:37,043:INFO:_master_model_container: 13
+2023-10-14 17:49:37,043:INFO:_display_container: 2
+2023-10-14 17:49:37,052:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [16, 15,
+                                                                        14, 13,
+                                                                        12, 11,
+                                                                        10, 9,
+                                                                        8, 7, 6,
+                                                                        5, 4, 3,
+                                                                        2, 1]},
+                                                   n_jobs=1)],
+                    regressor=ElasticNet(random_state=123), sp=16,
+                    window_length=16)
+2023-10-14 17:49:37,052:INFO:create_model() successfully completed......................................
+2023-10-14 17:49:37,227:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:49:37,231:INFO:Creating metrics dataframe
+2023-10-14 17:49:37,273:INFO:Initializing Ridge w/ Cond. Deseasonalize & Detrending
+2023-10-14 17:49:37,273:INFO:Total runtime is 2.744915695985158 minutes
+2023-10-14 17:49:37,283:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:49:37,283:INFO:Initializing create_model()
+2023-10-14 17:49:37,283:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=ridge_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:49:37,283:INFO:Checking exceptions
+2023-10-14 17:49:37,283:INFO:Importing libraries
+2023-10-14 17:49:37,285:INFO:Copying training dataset
+2023-10-14 17:49:37,295:INFO:Defining folds
+2023-10-14 17:49:37,295:INFO:Declaring metric variables
+2023-10-14 17:49:37,311:INFO:Importing untrained model
+2023-10-14 17:49:37,323:INFO:Ridge w/ Cond. Deseasonalize & Detrending Imported successfully
+2023-10-14 17:49:37,347:INFO:Starting cross validation
+2023-10-14 17:49:37,353:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:49:37,886:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-10-14 17:49:37,910:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-10-14 17:49:43,139:INFO:Calculating mean and std
+2023-10-14 17:49:43,139:INFO:Creating metrics dataframe
+2023-10-14 17:49:43,155:INFO:Uploading results into container
+2023-10-14 17:49:43,155:INFO:Uploading model into container now
+2023-10-14 17:49:43,155:INFO:_master_model_container: 14
+2023-10-14 17:49:43,155:INFO:_display_container: 2
+2023-10-14 17:49:43,167:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [16, 15,
+                                                                        14, 13,
+                                                                        12, 11,
+                                                                        10, 9,
+                                                                        8, 7, 6,
+                                                                        5, 4, 3,
+                                                                        2, 1]},
+                                                   n_jobs=1)],
+                    regressor=Ridge(random_state=123), sp=16, window_length=16)
+2023-10-14 17:49:43,167:INFO:create_model() successfully completed......................................
+2023-10-14 17:49:43,326:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:49:43,326:INFO:Creating metrics dataframe
+2023-10-14 17:49:43,364:INFO:Initializing Lasso w/ Cond. Deseasonalize & Detrending
+2023-10-14 17:49:43,364:INFO:Total runtime is 2.8464329799016315 minutes
+2023-10-14 17:49:43,375:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:49:43,375:INFO:Initializing create_model()
+2023-10-14 17:49:43,375:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=lasso_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:49:43,375:INFO:Checking exceptions
+2023-10-14 17:49:43,375:INFO:Importing libraries
+2023-10-14 17:49:43,375:INFO:Copying training dataset
+2023-10-14 17:49:43,387:INFO:Defining folds
+2023-10-14 17:49:43,387:INFO:Declaring metric variables
+2023-10-14 17:49:43,399:INFO:Importing untrained model
+2023-10-14 17:49:43,413:INFO:Lasso w/ Cond. Deseasonalize & Detrending Imported successfully
+2023-10-14 17:49:43,443:INFO:Starting cross validation
+2023-10-14 17:49:43,451:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:49:48,587:INFO:Calculating mean and std
+2023-10-14 17:49:48,590:INFO:Creating metrics dataframe
+2023-10-14 17:49:48,604:INFO:Uploading results into container
+2023-10-14 17:49:48,604:INFO:Uploading model into container now
+2023-10-14 17:49:48,604:INFO:_master_model_container: 15
+2023-10-14 17:49:48,604:INFO:_display_container: 2
+2023-10-14 17:49:48,612:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [16, 15,
+                                                                        14, 13,
+                                                                        12, 11,
+                                                                        10, 9,
+                                                                        8, 7, 6,
+                                                                        5, 4, 3,
+                                                                        2, 1]},
+                                                   n_jobs=1)],
+                    regressor=Lasso(random_state=123), sp=16, window_length=16)
+2023-10-14 17:49:48,612:INFO:create_model() successfully completed......................................
+2023-10-14 17:49:48,795:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:49:48,795:INFO:Creating metrics dataframe
+2023-10-14 17:49:48,832:INFO:Initializing Lasso Least Angular Regressor w/ Cond. Deseasonalize & Detrending
+2023-10-14 17:49:48,832:INFO:Total runtime is 2.937566451231638 minutes
+2023-10-14 17:49:48,844:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:49:48,844:INFO:Initializing create_model()
+2023-10-14 17:49:48,844:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=llar_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:49:48,844:INFO:Checking exceptions
+2023-10-14 17:49:48,844:INFO:Importing libraries
+2023-10-14 17:49:48,844:INFO:Copying training dataset
+2023-10-14 17:49:48,861:INFO:Defining folds
+2023-10-14 17:49:48,861:INFO:Declaring metric variables
+2023-10-14 17:49:48,873:INFO:Importing untrained model
+2023-10-14 17:49:48,886:INFO:Lasso Least Angular Regressor w/ Cond. Deseasonalize & Detrending Imported successfully
+2023-10-14 17:49:48,914:INFO:Starting cross validation
+2023-10-14 17:49:48,921:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:49:54,084:INFO:Calculating mean and std
+2023-10-14 17:49:54,088:INFO:Creating metrics dataframe
+2023-10-14 17:49:54,104:INFO:Uploading results into container
+2023-10-14 17:49:54,104:INFO:Uploading model into container now
+2023-10-14 17:49:54,108:INFO:_master_model_container: 16
+2023-10-14 17:49:54,108:INFO:_display_container: 2
+2023-10-14 17:49:54,112:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [16, 15,
+                                                                        14, 13,
+                                                                        12, 11,
+                                                                        10, 9,
+                                                                        8, 7, 6,
+                                                                        5, 4, 3,
+                                                                        2, 1]},
+                                                   n_jobs=1)],
+                    regressor=LassoLars(random_state=123), sp=16,
+                    window_length=16)
+2023-10-14 17:49:54,112:INFO:create_model() successfully completed......................................
+2023-10-14 17:49:54,295:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:49:54,295:INFO:Creating metrics dataframe
+2023-10-14 17:49:54,328:INFO:Initializing Bayesian Ridge w/ Cond. Deseasonalize & Detrending
+2023-10-14 17:49:54,328:INFO:Total runtime is 3.029157221317291 minutes
+2023-10-14 17:49:54,337:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:49:54,337:INFO:Initializing create_model()
+2023-10-14 17:49:54,337:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=br_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:49:54,337:INFO:Checking exceptions
+2023-10-14 17:49:54,337:INFO:Importing libraries
+2023-10-14 17:49:54,337:INFO:Copying training dataset
+2023-10-14 17:49:54,348:INFO:Defining folds
+2023-10-14 17:49:54,348:INFO:Declaring metric variables
+2023-10-14 17:49:54,360:INFO:Importing untrained model
+2023-10-14 17:49:54,373:INFO:Bayesian Ridge w/ Cond. Deseasonalize & Detrending Imported successfully
+2023-10-14 17:49:54,401:INFO:Starting cross validation
+2023-10-14 17:49:54,405:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:49:59,523:INFO:Calculating mean and std
+2023-10-14 17:49:59,523:INFO:Creating metrics dataframe
+2023-10-14 17:49:59,543:INFO:Uploading results into container
+2023-10-14 17:49:59,543:INFO:Uploading model into container now
+2023-10-14 17:49:59,543:INFO:_master_model_container: 17
+2023-10-14 17:49:59,543:INFO:_display_container: 2
+2023-10-14 17:49:59,551:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [16, 15,
+                                                                        14, 13,
+                                                                        12, 11,
+                                                                        10, 9,
+                                                                        8, 7, 6,
+                                                                        5, 4, 3,
+                                                                        2, 1]},
+                                                   n_jobs=1)],
+                    regressor=BayesianRidge(), sp=16, window_length=16)
+2023-10-14 17:49:59,551:INFO:create_model() successfully completed......................................
+2023-10-14 17:49:59,729:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:49:59,729:INFO:Creating metrics dataframe
+2023-10-14 17:49:59,774:INFO:Initializing Huber w/ Cond. Deseasonalize & Detrending
+2023-10-14 17:49:59,774:INFO:Total runtime is 3.119936347007751 minutes
+2023-10-14 17:49:59,787:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:49:59,787:INFO:Initializing create_model()
+2023-10-14 17:49:59,787:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=huber_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:49:59,787:INFO:Checking exceptions
+2023-10-14 17:49:59,787:INFO:Importing libraries
+2023-10-14 17:49:59,787:INFO:Copying training dataset
+2023-10-14 17:49:59,804:INFO:Defining folds
+2023-10-14 17:49:59,804:INFO:Declaring metric variables
+2023-10-14 17:49:59,816:INFO:Importing untrained model
+2023-10-14 17:49:59,824:INFO:Huber w/ Cond. Deseasonalize & Detrending Imported successfully
+2023-10-14 17:49:59,852:INFO:Starting cross validation
+2023-10-14 17:49:59,860:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:50:05,101:INFO:Calculating mean and std
+2023-10-14 17:50:05,104:INFO:Creating metrics dataframe
+2023-10-14 17:50:05,116:INFO:Uploading results into container
+2023-10-14 17:50:05,116:INFO:Uploading model into container now
+2023-10-14 17:50:05,118:INFO:_master_model_container: 18
+2023-10-14 17:50:05,118:INFO:_display_container: 2
+2023-10-14 17:50:05,125:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [16, 15,
+                                                                        14, 13,
+                                                                        12, 11,
+                                                                        10, 9,
+                                                                        8, 7, 6,
+                                                                        5, 4, 3,
+                                                                        2, 1]},
+                                                   n_jobs=1)],
+                    regressor=HuberRegressor(), sp=16, window_length=16)
+2023-10-14 17:50:05,125:INFO:create_model() successfully completed......................................
+2023-10-14 17:50:05,303:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:50:05,303:INFO:Creating metrics dataframe
+2023-10-14 17:50:05,344:INFO:Initializing Orthogonal Matching Pursuit w/ Cond. Deseasonalize & Detrending
+2023-10-14 17:50:05,344:INFO:Total runtime is 3.2127630392710365 minutes
+2023-10-14 17:50:05,352:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:50:05,356:INFO:Initializing create_model()
+2023-10-14 17:50:05,356:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=omp_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:50:05,356:INFO:Checking exceptions
+2023-10-14 17:50:05,356:INFO:Importing libraries
+2023-10-14 17:50:05,356:INFO:Copying training dataset
+2023-10-14 17:50:05,370:INFO:Defining folds
+2023-10-14 17:50:05,370:INFO:Declaring metric variables
+2023-10-14 17:50:05,380:INFO:Importing untrained model
+2023-10-14 17:50:05,393:INFO:Orthogonal Matching Pursuit w/ Cond. Deseasonalize & Detrending Imported successfully
+2023-10-14 17:50:05,422:INFO:Starting cross validation
+2023-10-14 17:50:05,434:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:50:10,373:INFO:Calculating mean and std
+2023-10-14 17:50:10,377:INFO:Creating metrics dataframe
+2023-10-14 17:50:10,393:INFO:Uploading results into container
+2023-10-14 17:50:10,393:INFO:Uploading model into container now
+2023-10-14 17:50:10,393:INFO:_master_model_container: 19
+2023-10-14 17:50:10,393:INFO:_display_container: 2
+2023-10-14 17:50:10,401:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [16, 15,
+                                                                        14, 13,
+                                                                        12, 11,
+                                                                        10, 9,
+                                                                        8, 7, 6,
+                                                                        5, 4, 3,
+                                                                        2, 1]},
+                                                   n_jobs=1)],
+                    regressor=OrthogonalMatchingPursuit(), sp=16,
+                    window_length=16)
+2023-10-14 17:50:10,405:INFO:create_model() successfully completed......................................
+2023-10-14 17:50:10,577:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:50:10,577:INFO:Creating metrics dataframe
+2023-10-14 17:50:10,613:INFO:Initializing K Neighbors w/ Cond. Deseasonalize & Detrending
+2023-10-14 17:50:10,613:INFO:Total runtime is 3.300575304031372 minutes
+2023-10-14 17:50:10,621:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:50:10,621:INFO:Initializing create_model()
+2023-10-14 17:50:10,621:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=knn_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:50:10,621:INFO:Checking exceptions
+2023-10-14 17:50:10,621:INFO:Importing libraries
+2023-10-14 17:50:10,621:INFO:Copying training dataset
+2023-10-14 17:50:10,636:INFO:Defining folds
+2023-10-14 17:50:10,636:INFO:Declaring metric variables
+2023-10-14 17:50:10,649:INFO:Importing untrained model
+2023-10-14 17:50:10,661:INFO:K Neighbors w/ Cond. Deseasonalize & Detrending Imported successfully
+2023-10-14 17:50:10,706:INFO:Starting cross validation
+2023-10-14 17:50:10,714:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:50:16,261:INFO:Calculating mean and std
+2023-10-14 17:50:16,261:INFO:Creating metrics dataframe
+2023-10-14 17:50:16,282:INFO:Uploading results into container
+2023-10-14 17:50:16,282:INFO:Uploading model into container now
+2023-10-14 17:50:16,282:INFO:_master_model_container: 20
+2023-10-14 17:50:16,282:INFO:_display_container: 2
+2023-10-14 17:50:16,290:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [16, 15,
+                                                                        14, 13,
+                                                                        12, 11,
+                                                                        10, 9,
+                                                                        8, 7, 6,
+                                                                        5, 4, 3,
+                                                                        2, 1]},
+                                                   n_jobs=1)],
+                    regressor=KNeighborsRegressor(n_jobs=-1), sp=16,
+                    window_length=16)
+2023-10-14 17:50:16,290:INFO:create_model() successfully completed......................................
+2023-10-14 17:50:16,469:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:50:16,469:INFO:Creating metrics dataframe
+2023-10-14 17:50:16,509:INFO:Initializing Decision Tree w/ Cond. Deseasonalize & Detrending
+2023-10-14 17:50:16,509:INFO:Total runtime is 3.398843204975128 minutes
+2023-10-14 17:50:16,517:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:50:16,517:INFO:Initializing create_model()
+2023-10-14 17:50:16,521:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=dt_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:50:16,521:INFO:Checking exceptions
+2023-10-14 17:50:16,521:INFO:Importing libraries
+2023-10-14 17:50:16,521:INFO:Copying training dataset
+2023-10-14 17:50:16,537:INFO:Defining folds
+2023-10-14 17:50:16,537:INFO:Declaring metric variables
+2023-10-14 17:50:16,547:INFO:Importing untrained model
+2023-10-14 17:50:16,558:INFO:Decision Tree w/ Cond. Deseasonalize & Detrending Imported successfully
+2023-10-14 17:50:16,591:INFO:Starting cross validation
+2023-10-14 17:50:16,595:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:50:21,703:INFO:Calculating mean and std
+2023-10-14 17:50:21,703:INFO:Creating metrics dataframe
+2023-10-14 17:50:21,719:INFO:Uploading results into container
+2023-10-14 17:50:21,719:INFO:Uploading model into container now
+2023-10-14 17:50:21,719:INFO:_master_model_container: 21
+2023-10-14 17:50:21,719:INFO:_display_container: 2
+2023-10-14 17:50:21,731:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [16, 15,
+                                                                        14, 13,
+                                                                        12, 11,
+                                                                        10, 9,
+                                                                        8, 7, 6,
+                                                                        5, 4, 3,
+                                                                        2, 1]},
+                                                   n_jobs=1)],
+                    regressor=DecisionTreeRegressor(random_state=123), sp=16,
+                    window_length=16)
+2023-10-14 17:50:21,731:INFO:create_model() successfully completed......................................
+2023-10-14 17:50:21,913:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:50:21,913:INFO:Creating metrics dataframe
+2023-10-14 17:50:21,961:INFO:Initializing Random Forest w/ Cond. Deseasonalize & Detrending
+2023-10-14 17:50:21,961:INFO:Total runtime is 3.4897137204806006 minutes
+2023-10-14 17:50:21,969:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:50:21,969:INFO:Initializing create_model()
+2023-10-14 17:50:21,969:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=rf_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:50:21,969:INFO:Checking exceptions
+2023-10-14 17:50:21,969:INFO:Importing libraries
+2023-10-14 17:50:21,969:INFO:Copying training dataset
+2023-10-14 17:50:21,987:INFO:Defining folds
+2023-10-14 17:50:21,987:INFO:Declaring metric variables
+2023-10-14 17:50:22,003:INFO:Importing untrained model
+2023-10-14 17:50:22,015:INFO:Random Forest w/ Cond. Deseasonalize & Detrending Imported successfully
+2023-10-14 17:50:22,047:INFO:Starting cross validation
+2023-10-14 17:50:22,059:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:50:32,739:INFO:Calculating mean and std
+2023-10-14 17:50:32,739:INFO:Creating metrics dataframe
+2023-10-14 17:50:32,755:INFO:Uploading results into container
+2023-10-14 17:50:32,755:INFO:Uploading model into container now
+2023-10-14 17:50:32,755:INFO:_master_model_container: 22
+2023-10-14 17:50:32,755:INFO:_display_container: 2
+2023-10-14 17:50:32,768:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [16, 15,
+                                                                        14, 13,
+                                                                        12, 11,
+                                                                        10, 9,
+                                                                        8, 7, 6,
+                                                                        5, 4, 3,
+                                                                        2, 1]},
+                                                   n_jobs=1)],
+                    regressor=RandomForestRegressor(n_jobs=-1, random_state=123),
+                    sp=16, window_length=16)
+2023-10-14 17:50:32,768:INFO:create_model() successfully completed......................................
+2023-10-14 17:50:32,951:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:50:32,951:INFO:Creating metrics dataframe
+2023-10-14 17:50:33,000:INFO:Initializing Extra Trees w/ Cond. Deseasonalize & Detrending
+2023-10-14 17:50:33,000:INFO:Total runtime is 3.6736912846565244 minutes
+2023-10-14 17:50:33,012:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:50:33,012:INFO:Initializing create_model()
+2023-10-14 17:50:33,012:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=et_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:50:33,012:INFO:Checking exceptions
+2023-10-14 17:50:33,012:INFO:Importing libraries
+2023-10-14 17:50:33,012:INFO:Copying training dataset
+2023-10-14 17:50:33,028:INFO:Defining folds
+2023-10-14 17:50:33,028:INFO:Declaring metric variables
+2023-10-14 17:50:33,040:INFO:Importing untrained model
+2023-10-14 17:50:33,052:INFO:Extra Trees w/ Cond. Deseasonalize & Detrending Imported successfully
+2023-10-14 17:50:33,076:INFO:Starting cross validation
+2023-10-14 17:50:33,080:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:50:42,186:INFO:Calculating mean and std
+2023-10-14 17:50:42,186:INFO:Creating metrics dataframe
+2023-10-14 17:50:42,207:INFO:Uploading results into container
+2023-10-14 17:50:42,207:INFO:Uploading model into container now
+2023-10-14 17:50:42,207:INFO:_master_model_container: 23
+2023-10-14 17:50:42,207:INFO:_display_container: 2
+2023-10-14 17:50:42,217:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [16, 15,
+                                                                        14, 13,
+                                                                        12, 11,
+                                                                        10, 9,
+                                                                        8, 7, 6,
+                                                                        5, 4, 3,
+                                                                        2, 1]},
+                                                   n_jobs=1)],
+                    regressor=ExtraTreesRegressor(n_jobs=-1, random_state=123),
+                    sp=16, window_length=16)
+2023-10-14 17:50:42,217:INFO:create_model() successfully completed......................................
+2023-10-14 17:50:42,406:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:50:42,407:INFO:Creating metrics dataframe
+2023-10-14 17:50:42,455:INFO:Initializing Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2023-10-14 17:50:42,455:INFO:Total runtime is 3.8312804261843363 minutes
+2023-10-14 17:50:42,463:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:50:42,467:INFO:Initializing create_model()
+2023-10-14 17:50:42,467:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=gbr_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:50:42,467:INFO:Checking exceptions
+2023-10-14 17:50:42,467:INFO:Importing libraries
+2023-10-14 17:50:42,467:INFO:Copying training dataset
+2023-10-14 17:50:42,483:INFO:Defining folds
+2023-10-14 17:50:42,483:INFO:Declaring metric variables
+2023-10-14 17:50:42,495:INFO:Importing untrained model
+2023-10-14 17:50:42,511:INFO:Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2023-10-14 17:50:42,544:INFO:Starting cross validation
+2023-10-14 17:50:42,552:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:50:49,592:INFO:Calculating mean and std
+2023-10-14 17:50:49,597:INFO:Creating metrics dataframe
+2023-10-14 17:50:49,617:INFO:Uploading results into container
+2023-10-14 17:50:49,617:INFO:Uploading model into container now
+2023-10-14 17:50:49,619:INFO:_master_model_container: 24
+2023-10-14 17:50:49,620:INFO:_display_container: 2
+2023-10-14 17:50:49,625:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [16, 15,
+                                                                        14, 13,
+                                                                        12, 11,
+                                                                        10, 9,
+                                                                        8, 7, 6,
+                                                                        5, 4, 3,
+                                                                        2, 1]},
+                                                   n_jobs=1)],
+                    regressor=GradientBoostingRegressor(random_state=123),
+                    sp=16, window_length=16)
+2023-10-14 17:50:49,629:INFO:create_model() successfully completed......................................
+2023-10-14 17:50:49,810:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:50:49,810:INFO:Creating metrics dataframe
+2023-10-14 17:50:49,854:INFO:Initializing AdaBoost w/ Cond. Deseasonalize & Detrending
+2023-10-14 17:50:49,854:INFO:Total runtime is 3.9545948068300882 minutes
+2023-10-14 17:50:49,862:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:50:49,866:INFO:Initializing create_model()
+2023-10-14 17:50:49,867:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=ada_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:50:49,867:INFO:Checking exceptions
+2023-10-14 17:50:49,868:INFO:Importing libraries
+2023-10-14 17:50:49,868:INFO:Copying training dataset
+2023-10-14 17:50:49,878:INFO:Defining folds
+2023-10-14 17:50:49,878:INFO:Declaring metric variables
+2023-10-14 17:50:49,890:INFO:Importing untrained model
+2023-10-14 17:50:49,902:INFO:AdaBoost w/ Cond. Deseasonalize & Detrending Imported successfully
+2023-10-14 17:50:49,931:INFO:Starting cross validation
+2023-10-14 17:50:49,940:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:50:56,096:INFO:Calculating mean and std
+2023-10-14 17:50:56,100:INFO:Creating metrics dataframe
+2023-10-14 17:50:56,112:INFO:Uploading results into container
+2023-10-14 17:50:56,112:INFO:Uploading model into container now
+2023-10-14 17:50:56,112:INFO:_master_model_container: 25
+2023-10-14 17:50:56,112:INFO:_display_container: 2
+2023-10-14 17:50:56,121:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [16, 15,
+                                                                        14, 13,
+                                                                        12, 11,
+                                                                        10, 9,
+                                                                        8, 7, 6,
+                                                                        5, 4, 3,
+                                                                        2, 1]},
+                                                   n_jobs=1)],
+                    regressor=AdaBoostRegressor(random_state=123), sp=16,
+                    window_length=16)
+2023-10-14 17:50:56,121:INFO:create_model() successfully completed......................................
+2023-10-14 17:50:56,290:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:50:56,290:INFO:Creating metrics dataframe
+2023-10-14 17:50:56,343:INFO:Initializing Light Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2023-10-14 17:50:56,343:INFO:Total runtime is 4.062742392222087 minutes
+2023-10-14 17:50:56,355:INFO:SubProcess create_model() called ==================================
+2023-10-14 17:50:56,355:INFO:Initializing create_model()
+2023-10-14 17:50:56,355:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=lightgbm_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000141A80F6070>, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:50:56,358:INFO:Checking exceptions
+2023-10-14 17:50:56,358:INFO:Importing libraries
+2023-10-14 17:50:56,358:INFO:Copying training dataset
+2023-10-14 17:50:56,377:INFO:Defining folds
+2023-10-14 17:50:56,377:INFO:Declaring metric variables
+2023-10-14 17:50:56,388:INFO:Importing untrained model
+2023-10-14 17:50:56,406:INFO:Light Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2023-10-14 17:50:56,468:INFO:Starting cross validation
+2023-10-14 17:50:56,474:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:50:57,655:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:57,663:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:57,803:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:57,835:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:57,866:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:57,921:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:57,934:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:57,951:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,003:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,011:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,028:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,090:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,094:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,110:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,168:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,172:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,192:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,251:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,258:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,274:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,336:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,344:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,365:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,415:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,423:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,475:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,488:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,512:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,561:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,582:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,593:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,650:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,654:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,675:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,729:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,737:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,762:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,809:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,823:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,834:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,888:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,905:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,917:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,980:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:58,991:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,008:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,066:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,066:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,091:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,145:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,151:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,173:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,232:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,232:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,255:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,304:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,312:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,341:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,387:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,399:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,424:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,469:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,484:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,511:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,552:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,566:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,592:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,642:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,646:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,670:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,717:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,728:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,753:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,801:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,809:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,838:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,884:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,884:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,909:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,966:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,966:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:50:59,996:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,053:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,057:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,093:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,126:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,135:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,171:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,208:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,216:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,251:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,286:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,290:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,326:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,368:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,375:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,412:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,450:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,456:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,492:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,529:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,529:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,573:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,614:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,615:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,662:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,699:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,701:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,744:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,775:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,779:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,829:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,858:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,863:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,907:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,928:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,936:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:00,983:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,003:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,023:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,059:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,083:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,103:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,140:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,165:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,185:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,221:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,251:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,267:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,303:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,328:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,349:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,383:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,416:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,430:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,462:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,494:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,511:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,524:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,545:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,570:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,590:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,623:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,649:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,679:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,704:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,733:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,761:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,783:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,811:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,849:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,867:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,899:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,932:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,944:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:01,972:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,005:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,022:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,058:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,087:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,100:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,136:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,165:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,183:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,218:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,247:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,267:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,308:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,332:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,349:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,373:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,415:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,420:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,456:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,495:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,508:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,540:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,577:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,589:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,663:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\lightgbm\basic.py:599: UserWarning: Usage of np.ndarray subset (sliced data) is not recommended due to it will double the peak memory cost in LightGBM.
+  _log_warning("Usage of np.ndarray subset (sliced data) is not recommended "
+
+2023-10-14 17:51:02,707:INFO:Calculating mean and std
+2023-10-14 17:51:02,711:INFO:Creating metrics dataframe
+2023-10-14 17:51:02,727:INFO:Uploading results into container
+2023-10-14 17:51:02,727:INFO:Uploading model into container now
+2023-10-14 17:51:02,731:INFO:_master_model_container: 26
+2023-10-14 17:51:02,732:INFO:_display_container: 2
+2023-10-14 17:51:02,739:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [16, 15,
+                                                                        14, 13,
+                                                                        12, 11,
+                                                                        10, 9,
+                                                                        8, 7, 6,
+                                                                        5, 4, 3,
+                                                                        2, 1]},
+                                                   n_jobs=1)],
+                    regressor=LGBMRegressor(n_jobs=-1, random_state=123), sp=16,
+                    window_length=16)
+2023-10-14 17:51:02,739:INFO:create_model() successfully completed......................................
+2023-10-14 17:51:02,916:INFO:SubProcess create_model() end ==================================
+2023-10-14 17:51:02,916:INFO:Creating metrics dataframe
+2023-10-14 17:51:02,989:INFO:Initializing create_model()
+2023-10-14 17:51:02,989:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=NaiveForecaster(strategy='mean'), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:51:02,989:INFO:Checking exceptions
+2023-10-14 17:51:02,997:INFO:Importing libraries
+2023-10-14 17:51:02,997:INFO:Copying training dataset
+2023-10-14 17:51:03,010:INFO:Defining folds
+2023-10-14 17:51:03,010:INFO:Declaring metric variables
+2023-10-14 17:51:03,014:INFO:Importing untrained model
+2023-10-14 17:51:03,014:INFO:Declaring custom model
+2023-10-14 17:51:03,015:INFO:Grand Means Forecaster Imported successfully
+2023-10-14 17:51:03,015:INFO:Cross validation set to False
+2023-10-14 17:51:03,015:INFO:Fitting Model
+2023-10-14 17:51:03,042:INFO:NaiveForecaster(strategy='mean')
+2023-10-14 17:51:03,042:INFO:create_model() successfully completed......................................
+2023-10-14 17:51:03,386:INFO:_master_model_container: 26
+2023-10-14 17:51:03,386:INFO:_display_container: 2
+2023-10-14 17:51:03,390:INFO:NaiveForecaster(strategy='mean')
+2023-10-14 17:51:03,390:INFO:compare_models() successfully completed......................................
+2023-10-14 17:55:54,354:INFO:Initializing create_model()
+2023-10-14 17:55:54,356:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=auto_arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-10-14 17:55:54,356:INFO:Checking exceptions
+2023-10-14 17:55:54,371:INFO:Importing libraries
+2023-10-14 17:55:54,371:INFO:Copying training dataset
+2023-10-14 17:55:54,375:INFO:Defining folds
+2023-10-14 17:55:54,375:INFO:Declaring metric variables
+2023-10-14 17:55:54,379:INFO:Importing untrained model
+2023-10-14 17:55:54,386:INFO:Auto ARIMA Imported successfully
+2023-10-14 17:55:54,396:INFO:Starting cross validation
+2023-10-14 17:55:54,400:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+            18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+            35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+            52, 53, 54, 55, 56, 57, 58, 59, 60],
+           dtype='int64', is_relative=True),
+                        initial_window=765, step_length=60), n_jobs=-1
+2023-10-14 17:56:05,280:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:56:28,770:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:56:48,217:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\pmdarima\arima\_auto_solvers.py:524: ModelFitWarning: Error fitting  ARIMA(2,0,2)(1,0,1)[16]           (if you do not want to see these warnings, run with error_action="ignore").
+  warnings.warn(warning_str, ModelFitWarning)
+
+2023-10-14 17:56:48,306:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning: In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+  warn(
+
+2023-10-14 17:56:48,359:INFO:Calculating mean and std
+2023-10-14 17:56:48,360:INFO:Creating metrics dataframe
+2023-10-14 17:56:48,367:INFO:Finalizing model
+2023-10-14 17:57:16,693:INFO:Uploading results into container
+2023-10-14 17:57:16,693:INFO:Uploading model into container now
+2023-10-14 17:57:16,707:INFO:_master_model_container: 27
+2023-10-14 17:57:16,707:INFO:_display_container: 3
+2023-10-14 17:57:16,707:INFO:AutoARIMA(random_state=123, sp=16, suppress_warnings=True)
+2023-10-14 17:57:16,707:INFO:create_model() successfully completed......................................
+2023-10-14 17:57:23,735:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning:
+
+In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+
+
+2023-10-14 17:59:49,360:INFO:Initializing finalize_model()
+2023-10-14 17:59:49,360:INFO:finalize_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=AutoARIMA(random_state=123, sp=16, suppress_warnings=True), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2023-10-14 17:59:49,360:INFO:Finalizing AutoARIMA(random_state=123, sp=16, suppress_warnings=True)
+2023-10-14 17:59:49,365:INFO:Initializing create_model()
+2023-10-14 17:59:49,365:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x00000141A6003700>, estimator=AutoARIMA(random_state=123, sp=16, suppress_warnings=True), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, kwargs={})
+2023-10-14 17:59:49,365:INFO:Checking exceptions
+2023-10-14 17:59:49,369:INFO:Importing libraries
+2023-10-14 17:59:49,369:INFO:Copying training dataset
+2023-10-14 17:59:49,373:INFO:Defining folds
+2023-10-14 17:59:49,373:INFO:Declaring metric variables
+2023-10-14 17:59:49,373:INFO:Importing untrained model
+2023-10-14 17:59:49,373:INFO:Declaring custom model
+2023-10-14 17:59:49,377:INFO:Auto ARIMA Imported successfully
+2023-10-14 17:59:49,377:INFO:Cross validation set to False
+2023-10-14 17:59:49,377:INFO:Fitting Model
+2023-10-14 18:00:43,364:INFO:ForecastingPipeline(steps=[('forecaster',
+                            TransformedTargetForecaster(steps=[('model',
+                                                                AutoARIMA(random_state=123,
+                                                                          sp=16,
+                                                                          suppress_warnings=True))]))])
+2023-10-14 18:00:43,364:INFO:create_model() successfully completed......................................
+2023-10-14 18:00:43,552:INFO:_master_model_container: 27
+2023-10-14 18:00:43,552:INFO:_display_container: 4
+2023-10-14 18:00:43,574:INFO:ForecastingPipeline(steps=[('forecaster',
+                            TransformedTargetForecaster(steps=[('model',
+                                                                AutoARIMA(random_state=123,
+                                                                          sp=16,
+                                                                          suppress_warnings=True))]))])
+2023-10-14 18:00:43,574:INFO:finalize_model() successfully completed......................................
+2023-10-14 18:01:20,478:WARNING:c:\Users\lukas\projects\virtual_environments\venv_supply_chain\lib\site-packages\sktime\forecasting\base\_base.py:557: UserWarning:
+
+In 0.22.0, predict_quantiles return default column level 0 name will change for univariate probabilistic quantile forecasts from 'Quantiles' to variable name. The old behaviour can be retained by setting the legacy_interface argument to True, until 0.23.0 when the legacy_interface argument will be removed.
+
+
+2023-10-14 18:01:20,514:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
+2023-10-14 18:01:20,650:INFO:Visual Rendered Successfully
