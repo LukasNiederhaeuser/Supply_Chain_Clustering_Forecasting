@@ -4,23 +4,27 @@ import sys
 import os
 
 FILENAME_CLUSTERING = "data_sales.csv"
-DATA_FOLDER = "../data/raw"
-filename = os.path.join(DATA_FOLDER, FILENAME_CLUSTERING)
+DATA_FOLDER_RAW = "../data/raw"
+DATA_FOLDER_PROCESSED = "../data/processed"
+filename = os.path.join(DATA_FOLDER_RAW, FILENAME_CLUSTERING)
 
 def load_data() -> pd.DataFrame:
 
-    """ Function to load the transactional data from the working directory
-        and returning the dataframe."""
+    """ 
+    Function to load the transactional data from the working directory and return the dataframe
+    """
 
     # Get the directory where the data is stored and load the data
     df_data = pd.read_csv(filename, sep=",", encoding = "latin-1")
 
-    # Return the loaded data
     return df_data
+
 
 def data_cleaning_forecasting() -> pd.DataFrame:
 
-    """ Function loads the data, adjusts the column names, the datatypes returns the cleaned dataframe. """
+    """
+    Function loads the data, adjusts the column names and filters unnecessary data. It then returns the dataframe
+    """
 
     # Call functions to load and subset the data
     df_data = load_data()
@@ -45,7 +49,12 @@ def data_cleaning_forecasting() -> pd.DataFrame:
     
     return df_data
 
-def create_features() -> pd.DataFrame:
+
+def create_features():
+
+    """
+    Function creates date-based features in the dataframe and saves the dataframe in the data/processed folder
+    """
 
     df = data_cleaning_forecasting()
 
@@ -67,6 +76,10 @@ def create_features() -> pd.DataFrame:
     column_data_types = {col: 'int' for col in df.columns}
     df = df.astype(column_data_types)
 
-    return df
-
-
+    try:
+        file_path = os.path.join(DATA_FOLDER_PROCESSED, "data_sales_processed.csv")
+        df.to_csv(file_path)
+        print("Processed version of data_sales.csv successfully saved in folder")
+    except Exception as e:
+        print(f"Error occurred: {e}")
+        print("Saving unsuccessful")
