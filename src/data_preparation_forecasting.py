@@ -3,14 +3,17 @@ import pandas as pd
 import sys
 import os
 
+FILENAME_CLUSTERING = "data_sales.csv"
+DATA_FOLDER = "../data/raw"
+filename = os.path.join(DATA_FOLDER, FILENAME_CLUSTERING)
+
 def load_data() -> pd.DataFrame:
 
     """ Function to load the transactional data from the working directory
         and returning the dataframe."""
 
     # Get the directory where the data is stored and load the data
-    data_raw_directory = (os.getcwd()+"\data_raw\data_sales.csv")
-    df_data = pd.read_csv(filepath_or_buffer = data_raw_directory, sep=",", encoding = "latin-1")
+    df_data = pd.read_csv(filename, sep=",", encoding = "latin-1")
 
     # Return the loaded data
     return df_data
@@ -29,7 +32,7 @@ def data_cleaning_forecasting() -> pd.DataFrame:
                             "preco": "Price_per_Unit"}, inplace = True)
     
     # Adjust datatype for date-column 
-    df_data["Date"] = pd.to_datetime(df_data["Date"], format='%Y/%m/%d')
+    df_data["Date"] = pd.to_datetime(df_data["Date"])
     
     # Exclude Stock Qty 
     df_data = df_data[["Date", "Sales_Qty"]]
@@ -42,7 +45,9 @@ def data_cleaning_forecasting() -> pd.DataFrame:
     
     return df_data
 
-def create_features(df) -> pd.DataFrame:
+def create_features() -> pd.DataFrame:
+
+    df = data_cleaning_forecasting()
 
     # Create features for year, quarter etc.
     df["Year"] = df.index.year
@@ -63,21 +68,5 @@ def create_features(df) -> pd.DataFrame:
     df = df.astype(column_data_types)
 
     return df
-
-def main():
-
-    df_data = data_cleaning_forecasting()
-    
-    # List of filenames
-    filename = "df_sales"
-
-    # Construct the filename and save as csv
-    filepath = os.path.join(os.getcwd(), "data_forecasting", filename + ".csv")
-    df_data.to_csv(filepath, index=True)
-
-    return df_data
-
-if __name__ == "__main__":
-    main()
 
 
